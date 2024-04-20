@@ -1,10 +1,6 @@
 {
   "apiKey": "xyz",
-  "node": {
-    "host":"somehost",
-    "port":"443",
-    "protocol":"https",
-    "path":"",
-    "tls":true
-  }
+  "nodes": [ { 'host': 'node1', 'port': 8108, 'protocol': 'http' },
+      { 'host': 'node2', 'port': 8108, 'protocol': 'http' },
+      { 'host': 'node3', 'port': 8108, 'protocol': 'http' }
 }
