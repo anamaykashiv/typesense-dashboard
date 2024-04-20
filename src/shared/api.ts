@@ -25,8 +25,8 @@ export class Api {
     });
     this.typesenseClient = new Typesense.Client({
       nodes: [ { 'host': 'node1', 'port': '8108', 'protocol': 'http' },
-               { 'host': 'node2', 'port': '8108', 'protocol': 'http' },
-               { 'host': 'node3', 'port': '8108', 'protocol': 'http' }],
+      { 'host': 'node2', 'port': '8108', 'protocol': 'http' },
+      { 'host': 'node3', 'port': '8108', 'protocol': 'http' },],
       apiKey,
       //connection_timeout_seconds: 3600,
     });
