@@ -24,9 +24,9 @@ export class Api {
       headers: {'x-typesense-api-key': apiKey }
     });
     this.typesenseClient = new Typesense.Client({
-      nodes: [{
-        ...node
-      }],
+      nodes: [ { 'host': 'node1', 'port': '8108', 'protocol': 'http' },
+    { 'host': 'node2', 'port': '8108', 'protocol': 'http' },
+    { 'host': 'node3', 'port': '8108', 'protocol': 'http' },],
       apiKey,
       //connection_timeout_seconds: 3600,
     });
